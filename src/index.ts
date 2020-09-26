@@ -1,3 +1,4 @@
+import cors from "cors";
 import express from "express";
 import path from "path";
 import { connectDb, env } from "./config";
@@ -6,6 +7,7 @@ import File from "./modals/File";
 import fileRoutes from "./routes/files";
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
 app.set("views", path.join(__dirname, "./views"));
