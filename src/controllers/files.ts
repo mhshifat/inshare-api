@@ -9,4 +9,8 @@ export default class FilesController {
   static download(req: Request, res: Response) {
     return FilesServices.download(req, res);
   }
+
+  static send(req: Request, res: Response) {
+    return FilesServices.send(req, res);
+  }
 }

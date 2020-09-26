@@ -6,6 +6,7 @@ import File from "./modals/File";
 import fileRoutes from "./routes/files";
 
 const app = express();
+app.use(express.json());
 app.use(express.static("public"));
 app.set("views", path.join(__dirname, "./views"));
 app.set("view engine", "ejs");

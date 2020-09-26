@@ -14,6 +14,7 @@
     "quotes": [2, "double"],
     "semi": [2, "always"],
     "comma-dangle": 0,
-    "space-before-function-paren": 0
+    "space-before-function-paren": 0,
+    "curly": 0
   }
 }
